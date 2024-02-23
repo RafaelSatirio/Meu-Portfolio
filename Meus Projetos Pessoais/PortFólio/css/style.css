@@ -190,9 +190,16 @@ h1 {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
+
+.imgprojetos {
     width: 100%;
+    height: 300px;
     border-radius: 5px;
+}
+
+.imgicone {
+    width: 50px;
+    height: 50px;
 }
 
 .botao-card-container {
