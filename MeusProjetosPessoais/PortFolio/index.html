@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu portfólio como desenvolvedor web. Conheça meus projetos, habilidades e entre em contato.">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-o51Mq2ERiZs43qF7ZfD9yLmlvI9AYOQbwJ7qw5hR5r3DTt1E5v8Udfsh8Mz9Y7bC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Rafael Satirio</h1>
+        <p class="highlight">Desenvolvedor Web</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="destaque">
+        <h2>Bem-vindo ao meu Portfólio!</h2>
+        <p>Sou um desenvolvedor tentando se desenvolver.</p>
+        <a href="#projetos">Veja meus Projetos</a>
+    </section>
+    <section class="sobre" id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="cards-container">
+            <div class="card">
+                <p>Sou alguém que gosta de programação e gosta muito de jogar, 
+                    e que quer ganhar muito $$$
+                </p>
+            </div>
+        </div>
+        <!-- Adicione mais informações sobre você aqui -->
+    </section>
+    <section id="projetos">
+        <h2>Meus Projetos Preferidos</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img class="imgprojetos" src="images/JogoDaCobrinha.PNG" alt="Jogo da Cobrinha">
+                <h3>Jogo da Cobrinha</h3>
+                <p>Jogue um jogo simples da cobrinha</p>
+                <div class="botao-card-container">
+                    <a href="./JogoDaCobrinha/index.html" class="botao">Ver Mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imgprojetos" src="images/rickandmorty.jpg" alt="Projeto 2">
+                <h3>Projeto 2</h3>
+                <p>Procure por Personagens de Rick and Morty</p>
+                <div class="botao-card-container">
+                    <a href="./API_desenho/index.html" class="botao">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+    </section>
+    <section class="habilidades" id="habilidades">
+        <h2>Minhas Habilidades</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Desenvolvimento Web</h3>
+                <p>Experiência em:</p>
+                <ul>
+                    <li>
+                        <img class="imgicone" src="images/html5.svg" alt="HTML5" class="icon">
+                        <span>HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgicone" src="images/css3-alt.svg" alt="CSS3" class="icon">
+                        <span>CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgicone" src="images/js.svg" alt="JavaScript" class="icon">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 50%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgicone" src="images/react.svg" alt="React.js" class="icon">
+                        <span>React.js</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 40%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgicone" src="images/react.svg" alt="React Native" class="icon">
+                        <span>React Native</span>
+                        <div class="progress-bar">
+                            <div class="progress-bar-inner" style="width: 30%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="enviar-email">
+        <h2>Envie-me uma mensagem</h2>
+        <form id="email-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <!-- Adicione um botão para enviar o e-mail -->
+            <button type="button" onclick="sendEmail()">Enviar</button>
+        </form>
+    </section>
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Fique à vontade para entrar em contato comigo através das seguintes opções:</p>
+        <ul>
+            <li>
+                <a href="https://github.com/RafaelSatirio" target="_blank" rel="noopener noreferrer">
+                    <img class="icones" src="images/github.svg"> Meu Github
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/satirio-undefined-9b8201281/" target="_blank" rel="noopener noreferrer">
+                    <img class="icones" src="images/linkedin.svg"> Meu LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/rafaelsatirio_" target="_blank" rel="noopener noreferrer">
+                    <img class="icones" src="images/instagram.svg"> Meu Instagram
+                </a>
+            </li>
+            <!-- Adicione mais opções de contato conforme necessário -->
+        </ul>
+    </section>
+    <!-- Botão de rolar para cima -->
+    <button id="scrollToTopBtn" title="Voltar ao topo">&#8593; Topo</button>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
