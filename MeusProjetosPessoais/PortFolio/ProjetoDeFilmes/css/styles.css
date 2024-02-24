@@ -1,80 +1,98 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 header {
-    background-color: #20232a;
-    color: #61dafb;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
 }
 
 h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 nav {
-    background-color: #61dafb;
-    padding: 0.5rem;
+    background-color: #444;
+    padding: 10px 0;
 }
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 li {
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
-a {
+.produtora-link {
     text-decoration: none;
-    color: #20232a;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-a:hover {
     color: #fff;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.movie-card:hover {
-    transform: scale(1.05);
-}
-
-.movie-poster {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ccc;
-}
-
-.movie-title {
-    padding: 0.5rem;
     text-align: center;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.marvel-image {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 500px;
+.produtora-link:hover {
+    background-color: #555;
 }
 
-.dc-image {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 500px;
+.produtora-name {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Ajuste de tamanho para a logo da DC */
+.logo.dc {
+    width: 70px;
+}
+
+#movies-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para telas menores (responsivo) */
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 5px 0;
+    }
 }

@@ -1,0 +1,98 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    color: #61dafb;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.backBtn {
+    color: #61dafb;
+    text-decoration: none;
+    border: 1px solid #61dafb;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.backBtn:hover {
+    background-color: #61dafb;
+    color: #fff;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#moviesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+.movieCard {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Para criar um layout de 3 colunas com margens de 10px entre elas */
+    box-sizing: border-box;
+    width: 10%;
+    height: 100%;
+}
+
+.movieCard img{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Para criar um layout de 3 colunas com margens de 10px entre elas */
+    box-sizing: border-box;
+    width: 150px;
+    height: 200px;
+}
+
+.movieCard:hover {
+    transform: scale(1.05);
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    #moviesContainer {
+        justify-content: center;
+    }
+
+    .movieCard {
+        width: 80%;
+    }
+}
