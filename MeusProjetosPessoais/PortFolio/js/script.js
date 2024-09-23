@@ -79,7 +79,7 @@ scrollToTopBtn.onclick = function () {
     // Substitua essas chaves pelos valores fornecidos pelo Email.js
     emailjs.init("cXjdFwYdSBazrrS7q");
 
-    emailjs.send("service_02nhlch", "template_sblgj1u", {
+    emailjs.send("service_a69o84q", "template_sblgj1u", {
         to_name: nome,
         from_email: email,
         message_html: mensagem
